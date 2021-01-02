@@ -50,7 +50,7 @@ getPoint = (a, b) => {
   target = null;
   preventClick = false;
 
-  if (points == 1) {
+  if (points == 10) {
     clearInterval(timerInt);
     scoreP.innerHTML = seconds + "." + millis;
     header.classList.add("daddy");
