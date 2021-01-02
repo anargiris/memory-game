@@ -1,0 +1,313 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(orbit.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid gray;
+  gap: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px thistle;
+  padding: 1rem;
+  margin-top: 50px;
+  border: 3px solid #eee;
+  position: relative;
+  top: calc(50% - 175px);
+  left: calc(50% - 190px);
+  background: inherit;
+  overflow: hidden;
+}
+
+.container:after {
+  content: "";
+  width: 500px;
+  height: 500px;
+  background: inherit;
+  position: absolute;
+  left: -25px;
+  right: 0;
+  top: -50px;
+  bottom: 0;
+  box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.05);
+  filter: blur(40px);
+}
+
+.card {
+  z-index: 1;
+  width: 65px;
+  height: 65px;
+  margin: auto;
+  background: initial;
+  cursor: pointer;
+  box-shadow: 5px -10px 100px rgb(255, 255, 255);
+}
+
+.card:hover {
+  border: 5px double #eee;
+}
+
+h1 {
+  width: 500px;
+  display: block;
+  margin: auto;
+  padding-bottom: 10px;
+
+  text-align: center;
+  font-family: "Hanalei Fill", cursive;
+  font-size: 60px;
+  cursor: pointer;
+  background: -webkit-linear-gradient(#eee, rgb(165, 165, 165));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 4px;
+  text-shadow: 7px 7px 0px whitesmoke;
+  overflow: hidden;
+}
+
+#bg-themes {
+  position: fixed;
+  padding: 2px;
+  padding-top: 5px;
+  width: 150px;
+  height: 30px;
+  top: 0;
+  right: 0;
+  border-radius: 3px;
+  background-blend-mode: lighten;
+}
+
+#decompBtn {
+  background-color: black;
+  color: red;
+  border-radius: 50%;
+  padding: 5px;
+  outline: none;
+  cursor: pointer;
+  font-family: "Nerko One", cursive;
+  font-size: 20px;
+  margin: 1px;
+}
+
+#psyBtn {
+  background-color: purple;
+  color: yellow;
+  border-radius: 50%;
+  padding: 4px;
+  outline: none;
+  cursor: pointer;
+  font-family: "Nerko One", cursive;
+  font-size: 20px;
+  margin: 1px;
+}
+
+#aquaBtn {
+  background-color: cyan;
+  color: whitesmoke;
+  border-radius: 50%;
+  padding: 4px;
+  outline: none;
+  cursor: pointer;
+  font-family: "Nerko One", cursive;
+  font-size: 20px;
+  margin: 1px;
+}
+
+#skyBtn {
+  background-color: whitesmoke;
+  color: gray;
+  border-radius: 50%;
+  padding: 4px;
+  outline: none;
+  cursor: pointer;
+  font-family: "Nerko One", cursive;
+  font-size: 20px;
+  margin: 1px;
+}
+
+#galaxyBtn {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  padding: 4px;
+  outline: none;
+  cursor: pointer;
+  font-family: "Nerko One", cursive;
+  font-size: 20px;
+  margin: 1px;
+}
+#skyBtn {
+  background-color: whitesmoke;
+  color: gray;
+  border-radius: 50%;
+  padding: 4px;
+  outline: none;
+  cursor: pointer;
+  font-family: "Nerko One", cursive;
+  font-size: 20px;
+  margin: 1px;
+}
+
+.daddy {
+  animation: move;
+  animation-duration: 2s;
+}
+
+@keyframes move {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.blue {
+  background-color: blue;
+}
+.pink {
+  background-color: pink;
+}
+.gray {
+  background-color: gray;
+}
+.brown {
+  background-color: brown;
+}
+.orange {
+  background-color: orange;
+}
+.purple {
+  background-color: purple;
+}
+.olive {
+  background-color: olive;
+}
+.green {
+  background-color: green;
+}
+
+.hidden {
+  background-color: black;
+}
+
+.goCont {
+  width: 80px;
+  position: relative;
+  margin: 0 auto;
+}
+
+#goBtn {
+  position: absolute;
+  background-color: black;
+  color: whitesmoke;
+  padding: 5px;
+  font-size: 30px;
+  width: 80px;
+  padding: 2px 0px;
+  margin: 0 auto;
+  border-radius: 25px;
+  box-shadow: 1px 1px 1px whitesmoke;
+  border: 1px solid whitesmoke;
+  outline: none;
+  cursor: pointer;
+  font-family: "Hanalei Fill", cursive;
+}
+
+#goBtn:hover {
+  border: 1px solid blue;
+}
+
+#timer {
+  position: absolute;
+  width: 100px;
+  height: 62px;
+  overflow: hidden;
+  padding: 10px;
+  margin: 0 auto;
+  display: none;
+  color: whitesmoke;
+  background: black;
+  font-size: 35px;
+  font: bold;
+  opacity: 0;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-top: 1px solid whitesmoke;
+  box-shadow: 0px -1px 1px whitesmoke;
+  overflow: hidden;
+  font-family: "Nerko One", cursive;
+  text-align: center;
+}
+
+#form-sub {
+  width: 400px;
+  height: 350px;
+  background-color: #010101;
+  color: #f0ece2;
+  position: fixed;
+  border-radius: 25px;
+  padding: 1rem;
+  border: 3px solid white;
+  left: 450px;
+  top: 150px;
+  font-family: "Nerko-one", cursive;
+  box-shadow: #010101 0px 5px 5px;
+}
+#addName {
+  padding: 5px;
+  display: inline-block;
+  width: 200px;
+  border: 1px solid white;
+  outline: none;
+  margin-left: 80px;
+  margin-top: 10px;
+  box-shadow: 1px 1px 2px #f0ece2;
+}
+#add {
+  padding: 10px;
+  font-family: "Nerko One", cursive;
+  border: 1px solid #f0ece2;
+  background-color: #acdbdf;
+  border-radius: 25px;
+  font-size: 30px;
+  outline: none;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px gray;
+
+  transition: border-radius 2s;
+  -webkit-transition: border-radius 2s;
+}
+
+#add:hover {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+h2 {
+  text-align: center;
+}

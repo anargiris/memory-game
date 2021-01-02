@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaderboards</title>
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="index.html"><button>Back</button></a>
+      <h1>Leaderboards:</h1>
+      <ul id="scored"></ul>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDzTfvAFhuL1UuLR2X8mRyDLy7xZtuyFO4",
+        authDomain: "memory-gamex-7fba2.firebaseapp.com",
+        projectId: "memory-gamex-7fba2",
+        storageBucket: "memory-gamex-7fba2.appspot.com",
+        messagingSenderId: "874124922494",
+        appId: "1:874124922494:web:631aaaff72ee48ea92522f",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="boards.js"></script>
+  </body>
+</html>

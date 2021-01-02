@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #010101;
+  color: #f0ece2;
+
+  font-family: "Nerko One", cursive;
+}
+
+.container {
+  max-width: 800px;
+  height: 100vh;
+  margin: auto;
+  border: 1px solid #f0ece2;
+  overflow: hidden;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  display: inline-block;
+  position: absolute;
+  border: 1px solid #f0ece2;
+  background-color: #acdbdf;
+  padding: 3px;
+  border-radius: 25px;
+  top: 0;
+  left: 0;
+  width: 75px;
+  margin-left: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+h3 {
+  display: inline-block;
+  font-size: 24px;
+  color: #69779b;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 0 auto;
+  padding-left: 60px;
+}
+
+li {
+  width: 170px;
+  list-style-type: none;
+  font-size: 19px;
+  padding: 2px;
+}
+
+span {
+  color: #acdbdf;
+}

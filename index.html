@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="bg-themes">
+      <button id="decompBtn">D</button>
+      <button id="psyBtn">P</button>
+      <button id="aquaBtn">A</button>
+      <button id="skyBtn">S</button>
+      <button id="galaxyBtn">G</button>
+    </div>
+
+    <h1 id="header">Memory Game!</h1>
+    <div class="goCont">
+      <button id="goBtn">Go!</button>
+      <span id="timer">00:00</span>
+    </div>
+
+    <div id="form-sub">
+      <h2>Submit your score!</h2>
+      <input type="text" id="addName" placeholder="0-12 characters.." />
+      <button id="add">ADD</button>
+    </div>
+    <div class="container">
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDzTfvAFhuL1UuLR2X8mRyDLy7xZtuyFO4",
+        authDomain: "memory-gamex-7fba2.firebaseapp.com",
+        projectId: "memory-gamex-7fba2",
+        storageBucket: "memory-gamex-7fba2.appspot.com",
+        messagingSenderId: "874124922494",
+        appId: "1:874124922494:web:631aaaff72ee48ea92522f",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="app.js"></script>
+    <script src="bg.js"></script>
+    <script src="db.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  </body>
+</html>
