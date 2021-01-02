@@ -8,6 +8,7 @@ body {
   background-image: url(orbit.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 .container {
@@ -20,10 +21,9 @@ body {
   border-radius: 5px;
   box-shadow: 0px 1px 2px thistle;
   padding: 1rem;
-  margin-top: 50px;
   border: 3px solid #eee;
   position: relative;
-  top: calc(50% - 175px);
+  top: calc(50% - 250px);
   left: calc(50% - 190px);
   background: inherit;
   overflow: hidden;
@@ -264,14 +264,13 @@ h1 {
   height: 350px;
   background-color: #010101;
   color: #f0ece2;
-  position: fixed;
   border-radius: 25px;
   padding: 1rem;
   border: 3px solid white;
-  left: 450px;
-  top: 150px;
   font-family: "Nerko-one", cursive;
   box-shadow: #010101 0px 5px 5px;
+  margin: auto;
+  display: none;
 }
 #addName {
   padding: 5px;
@@ -302,12 +301,18 @@ h1 {
 }
 
 #add:hover {
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
 h2 {
   text-align: center;
+}
+
+#scoreP {
+  text-align: center;
+  font-size: 32px;
+  color: #f0ece2;
 }

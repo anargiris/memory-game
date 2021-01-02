@@ -2,6 +2,11 @@ const cards = Array.prototype.slice.call(document.querySelectorAll(".card"));
 const header = document.getElementById("header");
 const container = document.querySelector(".container");
 const form = document.getElementById("form-sub");
+const scoreP = document.getElementById("scoreP");
+let timerInt;
+//TIMER STUFF
+let seconds = 0;
+let millis = 0;
 let colors = [
   "red",
   "yellow",
@@ -29,6 +34,10 @@ for (color of colors) {
   cardB.classList.add(`${color}`, "hidden");
   newCards.splice(newCards.indexOf(cardB), 1);
 }
+
+//GAME
+const goBtn = document.getElementById("goBtn");
+let timer = document.getElementById("timer");
 //Set up click event listeners
 let clickedCard = null;
 let target = null;
@@ -41,8 +50,9 @@ getPoint = (a, b) => {
   target = null;
   preventClick = false;
 
-  if (points == 10) {
+  if (points == 1) {
     clearInterval(timerInt);
+    scoreP.innerHTML = seconds + "." + millis;
     header.classList.add("daddy");
     for (card of cards) {
       gsap.to(card, { duration: 1, x: -50 });
@@ -51,24 +61,19 @@ getPoint = (a, b) => {
     gsap.from(form, {
       duration: 2,
       opacity: 0,
-      delay: 3,
+      delay: 3.5,
     });
     gsap.to(container, { duration: 1, opacity: 0, zIndex: -1, delay: 2 });
-    form.style.display = "block";
+    gsap.to(timer, { duration: 2, opacity: 0 });
+    setTimeout(() => {
+      form.style.display = "block";
+      container.style.display = "none";
+    }, 3500);
 
     score = Number(seconds + "." + millis);
     console.log(score);
   }
 };
-
-//GAME
-const goBtn = document.getElementById("goBtn");
-let timer = document.getElementById("timer");
-
-let timerInt;
-//TIMER STUFF
-let seconds = 0;
-let millis = 0;
 runTimer = () => {
   ++millis;
   if (millis == 99) {
