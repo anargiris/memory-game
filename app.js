@@ -123,7 +123,7 @@ goBtn.addEventListener("click", () => {
               clickedCard = null;
               target = null;
               preventClick = false;
-            }, 500);
+            }, 400);
       } else if (!preventClick) {
         clickedCard = e.target;
         clickedCard.classList.remove("hidden");
