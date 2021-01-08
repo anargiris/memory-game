@@ -11,6 +11,12 @@ body {
   height: 100vh;
 }
 
+.goCont {
+  width: 80px;
+  position: relative;
+  margin: 0 auto;
+}
+
 .container {
   width: 400px;
   height: 400px;
@@ -208,15 +214,6 @@ h1 {
 
 .hidden {
   background-color: black;
-}
-
-.goCont {
-  width: 80px;
-  position: relative;
-
-  top: calc(50% -300px);
-  left: calc(50% - 635px);
-  margin: 0 auto;
 }
 
 #goBtn {
