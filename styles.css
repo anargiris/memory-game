@@ -18,8 +18,8 @@ body {
 }
 
 .container {
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 450px;
   display: flex;
   flex-wrap: wrap;
   border: 1px solid gray;
@@ -30,7 +30,7 @@ body {
   border: 3px solid #eee;
   position: relative;
   top: calc(50% - 250px);
-  left: calc(50% - 190px);
+  left: calc(50% - 250px);
   background: inherit;
   overflow: hidden;
 }
@@ -51,8 +51,8 @@ body {
 
 .card {
   z-index: 1;
-  width: 65px;
-  height: 65px;
+  width: 80px;
+  height: 80px;
   margin: auto;
   background: initial;
   cursor: pointer;
@@ -222,7 +222,7 @@ h1 {
   color: whitesmoke;
   padding: 5px;
   font-size: 30px;
-  width: 80px;
+  width: 90px;
   padding: 2px 0px;
   margin: 0 auto;
   border-radius: 25px;
